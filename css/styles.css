@@ -1,0 +1,242 @@
+/* Globals Start */
+:root {
+    --primary-color: rgb(191 162 118);
+    --background-color: #eeede7;
+    --text-color: #2b2b2b;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: var(--background-color);
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.page {
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 25px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+}
+@media (min-width: 1025px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+}
+/* Scroll */
+
+/* تخصيص الشريط الكامل */
+::-webkit-scrollbar {
+    width: 10px; /* عرض الشريط */
+    height: 10px;
+}
+
+/* تخصيص مسار الشريط */
+::-webkit-scrollbar-track {
+    background-color: rgb(44, 44, 44);
+}
+
+/* تخصيص إبهام الشريط */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); /* لون الإبهام */
+    border-radius: 10px; /* حواف الإبهام */
+}
+
+/* تخصيص إبهام الشريط عند التفاعل (مثل hover) */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 144, 104); /* لون الإبهام عند التفاعل */
+}
+/* Scroll */
+/* Globals End */
+
+/* Start-Header */
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #000000d2 ;
+    direction: rtl;
+}
+header .logo img {
+    width: 40px;
+    height: 40px;
+}
+header ul li a:hover {
+    color: var(--primary-color);
+}
+/* End-Header */
+
+/* Start-Landing */
+.landing {
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.20),rgb(0,0,0,0.20)),url(../imgs/wncover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.landing .content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    color: honeydew;
+}
+/* End-Landing */
+/* Start-AboutSection */
+.about-section .content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    grid-gap: 20px;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+@media (max-width: 767px) {
+    .about-section .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+.about-section main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 60px auto;
+}
+@media (max-width: 767px) {
+    .about-section main {
+        margin: calc(20px +100vh) auto;
+    }
+}
+/* End-AboutSection */
+
+/* Start-Servies */
+.services-section {
+    margin: 60px auto;
+}
+.services-section .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.services-section .content .srv {
+    margin-bottom: 30px;
+    background-color: #fdfdfc;
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: 3px solid rgb(191 162 118);
+    box-shadow: -1px 0px 20px 0px  rgb(233, 233, 233);
+}
+.services-section .content .srv:hover {
+    background-color: #eeeadf;
+    border-bottom: 3px solid rgb(191 162 118);
+    transform: scale(1.02);
+}
+@media (max-width: 767px) {
+    .services-section .content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.services-section .content .srv i {
+    width: 48px;
+}
+/* End-Servies */
+
+/* Start-Training */
+.training-section {
+    margin: 60px auto;
+}
+.training-section .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+/* End-Training */
+
+/* Star_Legal */
+.legal-section {
+    margin: 60px auto;
+}
+.legal-section .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+@media (max-width: 767px) {
+    .legal-section .content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* End_Legal */
+
+/*  */
+.reservation-section {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(207, 169, 64, 0.425),rgba(207, 169, 64, 0.425)),url(../imgs/wnreservation-cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.reservation-section .content {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+/*  */
+
