@@ -274,6 +274,9 @@
     .d-grid-mobile {
         display: grid;
     }
+    .fs-26-mobile {
+        font-size: 26px;
+    }
     .fs-30-mobile {
         font-size: 30px;
     }
