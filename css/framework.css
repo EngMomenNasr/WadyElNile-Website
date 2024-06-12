@@ -54,6 +54,9 @@
 .mb-20{
     margin-bottom: 20px;
 }
+.mb-40{
+    margin-bottom: 40px;
+}
 .mr-20{
     margin-right: 20px;
 }
@@ -68,6 +71,9 @@
 }
 .mtb-auto{
     margin: auto 0;
+}
+.m-0-5 {
+    margin: 0 5px;
 }
 /* color */
 .bg-dark{
@@ -98,6 +104,9 @@
     color: #777777;
 }
 .c-gold {
+    color: rgb(191 162 118);
+}
+.c-gold-hover:hover {
     color: rgb(191 162 118);
 }
 /* boarder */
@@ -147,6 +156,12 @@
 }
 .w-300 {
     width: 300px;
+}
+.w-350 {
+    width: 350px;
+}
+.w-400 {
+    width: 400px;
 }
 .w-500 {
     width: 500px;
@@ -225,6 +240,9 @@
     font-size: 28px;
 }
 .fs-30 {
+    font-size: 30px;
+}
+.fs-35 {
     font-size: 35px;
 }
 .fw-400 {
@@ -249,6 +267,15 @@
     }
     .w-200-mobile {
         width: 200px;
+    }
+    .d-grid-mobile {
+        display: grid;
+    }
+    .fs-30-mobile {
+        font-size: 30px;
+    }
+    .p-12-25-mobile {
+        padding: 12px 25px;
     }
 }
 @media (min-width: 767px) {
